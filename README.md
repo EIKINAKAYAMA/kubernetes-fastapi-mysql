@@ -15,6 +15,9 @@ kubectl apply -f mysql-deployment.yaml -n database
 ~~~
 
 ### create app cluster
+Image base
+https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker
+
 1. create app ns
 ~~~ sh
 kubectl create namespace $namespace
