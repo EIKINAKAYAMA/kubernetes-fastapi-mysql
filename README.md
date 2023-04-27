@@ -1,5 +1,7 @@
 # Study Kubernetes
 
+<img width="1048" alt="スクリーンショット 2023-04-27 14 54 51" src="https://user-images.githubusercontent.com/65437818/234771904-9cd18dca-7cb2-407d-b903-b9c6c704ff62.png">
+
 # Process
 
 ### create db cluster
