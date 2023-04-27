@@ -30,9 +30,6 @@ kubectl apply -f sample-app-deployment.yaml,sample-app-configmap.yaml,sample-app
 kubectl port-forward svc/sample-app 8080:80 -n $namespace
 ~~~
 
-
-3. 
-
 # Tips
 - apiVersion の確認方法
 
