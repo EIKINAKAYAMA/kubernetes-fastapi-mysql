@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: sample-app
+  name: sample-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sample-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: sample-app
+    spec:
+      containers:
+        - image: tiangolo/uvicorn-gunicorn-fastapi:python3.7
+          name: fastapi-sample
+          envFrom:
+            - configMapRef:
+                name: sample-app
+            - secretRef:
+                name: sample-app
+          resources: {}
+status: {}
